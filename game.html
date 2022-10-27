@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="score">
+        <p class="uscore">0</p>
+        <p>-</p>
+        <p class="cscore">0</p>
+    </div>
+    <div class="game-container">
+        <div class="box ubox">
+            <h3>You</h3>
+            <div class="hand-container">
+                <img class="hand urock na" src="./assets/rock-hand.png" alt="rock-hand">
+                <img class="hand upaper" src="./assets/paper-hand.png" alt="rock-hand">
+                <img class="hand uscissors na" src="./assets/scissors-hand.png" alt="rock-hand">
+            </div>
+            <div class="button-container">
+                <img class="rock-btn" src="./assets/rock-logo.png" alt="rock-button">
+                <img class="paper-btn" src="./assets/paper-logo.png" alt="paper-button">
+                <img class="scissors-btn" src="./assets/scissors-logo.png" alt="scissors-button">
+            </div>
+        </div>
+        <div>
+            <img class="vs" src="./assets/vs.png" alt="vs">
+        </div>
+        <div class="box cbox">
+            <h3>Comp</h3>
+            <div class="hand-container">
+                <img class="hand crock na" src="./assets/rock-hand.png" alt="rock-hand">
+                <img class="hand cpaper" src="./assets/paper-hand.png" alt="rock-hand">
+                <img class="hand cscissors na" src="./assets/scissors-hand.png" alt="rock-hand">
+            </div>
+        </div>
+    </div>
+
+    <!-- Result container -->
+    <div class="result-container">
+        <h3 class="result na">User won.</h3>
+        <button class="play-again-btn na" onclick="window.location.reload()">Play again</button>
+    </div>
+</body>
+</html>
